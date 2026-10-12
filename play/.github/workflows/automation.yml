@@ -2,12 +2,8 @@ name: Production Interval Automation Engine
 
 on:
   schedule:
-    # Optimized off-peak intervals (~Tanzania Time UTC+3)
-    - cron: "19 5 * * *"   # ~08:19 EAT
-    - cron: "41 8 * * *"   # ~11:41 EAT
-    - cron: "19 11 * * *"  # ~14:19 EAT
-    - cron: "41 14 * * *"  # ~17:41 EAT
-    - cron: "19 18 * * *"  # ~21:19 EAT
+    # Runs exactly every hour, on the hour
+    - cron: "0 * * * *"
 
   workflow_dispatch: # Allows manual execution directly from the GitHub Actions tab
 
