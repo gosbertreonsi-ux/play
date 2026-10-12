@@ -27,8 +27,8 @@ jobs:
 
       # 2. Grant executable privileges to the engine runner
       - name: Make Script Executable
-        run: chmod +x scripts/commit_runner.sh
+        run: chmod +x ../commit_runner.sh
 
       # 3. Fire the execution sequence
       - name: Run Script Engine
-        run: ./scripts/commit_runner.sh
+        run: ../commit_runner.sh
